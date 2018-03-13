@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "541066810247",
+    "firebase_url": "https://carrpool-74a90.firebaseio.com",
+    "project_id": "carrpool-74a90",
+    "storage_bucket": "carrpool-74a90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541066810247:android:261a1c03807f5a78",
+        "android_client_info": {
+          "package_name": "com.example.prasanthrouthu.carrpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541066810247-r0mgrjnh6dqt9f4bqpaab11o5s9jq7p4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "541066810247-08b7v6erab48ffc8npthkvdmdctom1tb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prasanthrouthu.carrpool",
+            "certificate_hash": "c497e8d0b8dbf12e0480b5c02ece3a0e87f5582e"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBshxke4x65BJ99ZL939yMAzCEjEe65pyE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541066810247-r0mgrjnh6dqt9f4bqpaab11o5s9jq7p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

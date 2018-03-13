@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/car"
+tools:context="com.example.prasanthrouthu.carrpool.MainActivity">
+<Button
+    android:id="@+id/button8"
+    android:layout_width="259dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="60dp"
+    android:layout_marginStart="55dp"
+    android:layout_marginTop="158dp"
+    android:text="be a driver"
+    app:layout_constraintBottom_toTopOf="@+id/button9"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.607"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginRight="60dp"
+    android:layout_marginLeft="55dp" />
+
+<Button
+    android:id="@+id/button9"
+    android:layout_width="264dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="212dp"
+    android:layout_marginEnd="60dp"
+    android:layout_marginStart="60dp"
+    android:layout_marginTop="5dp"
+    android:text="be a passenger"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button8" />
+</android.support.constraint.ConstraintLayout>
