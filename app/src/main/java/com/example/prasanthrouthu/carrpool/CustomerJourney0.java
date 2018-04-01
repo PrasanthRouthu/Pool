@@ -22,7 +22,7 @@ public class CustomerJourney0 extends AppCompatActivity {
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CustomerJourney0.this, CustomerLocation.class);
+                Intent intent = new Intent(CustomerJourney0.this, CustomerJourney00.class);
                 intent.putExtra("User",User);
                 startActivity(intent);
                 //finish();

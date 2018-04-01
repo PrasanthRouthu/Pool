@@ -89,7 +89,7 @@ public class DriverJourneyActivity extends AppCompatActivity implements View.OnC
                         return;}
                         else {
                         Toast.makeText(DriverJourneyActivity.this, "Uploading Done!!!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(DriverJourneyActivity.this, MapsActivity.class);
+                        Intent intent = new Intent(DriverJourneyActivity.this, DriverJourney00.class);
                         intent.putExtra("User",User);
                         startActivity(intent);
                     }

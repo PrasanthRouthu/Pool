@@ -16,7 +16,7 @@ import javax.xml.transform.Source;
 public class DriverJourney0 extends AppCompatActivity {
     private Button mSubmit;
     private EditText CarModel,CarNumber,Seats,PhoneNumber,Rate;
-    private String CarModelS,CarNumberS,SeatsS,PhoneNumberS,RateS,SourceHolder,DestinationHolder,User;
+    private String CarModelS,CarNumberS,SeatsS,PhoneNumberS,RateS,SourceHolder,DestinationHolder,User,Name,Date,Time;
     public static final String Firebase_Server_URL = "https://carrpool-74a90.firebaseio.com/";
     Firebase firebase;
     @Override
@@ -32,6 +32,9 @@ public class DriverJourney0 extends AppCompatActivity {
         mSubmit = (Button) findViewById(R.id.button3);
         firebase = new Firebase(Firebase_Server_URL);
         User = getIntent().getExtras().getString("User");
+        Date = getIntent().getExtras().getString("Date");
+        Time = getIntent().getExtras().getString("Time");
+        Name = getIntent().getExtras().getString("Name");
 
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +78,9 @@ public class DriverJourney0 extends AppCompatActivity {
                 driver.setSeatsS(SeatsS);
                 driver.setDriverSource(SourceHolder);
                 driver.setDriverDestination(DestinationHolder);
+                driver.setName(Name);
+                driver.setTime(Time);
+                driver.setDate(Date);
                 firebase.child("Driver").child(User).setValue(driver);
                 Intent intent = new Intent(DriverJourney0.this, DriverLocation.class);
                 intent.putExtra("Source", SourceHolder);
